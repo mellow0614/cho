@@ -13,6 +13,7 @@ server.engine('html', require('ejs').renderFile);
 
 /************* Routing **************/
 //client Index
+
 server.get('/', (req, res, next) => {
 
     axios.get('http://localhost/api').then((Response)=>{
